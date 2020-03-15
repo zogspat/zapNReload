@@ -1,0 +1,16 @@
+{
+    "name": "ZapNreload",
+    "version": "1.1",
+    "description": "Zap cookies for the current page's site and reload the page",
+    "manifest_version": 2,
+	"browser_action": 
+    {
+    	"default_icon": 
+    	{
+    		"16": "images/actOfDesperation.png"
+    	},
+    	"default_title": "Zap cookies and reload",
+		"default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "<all_urls>", "cookies"]
+}
