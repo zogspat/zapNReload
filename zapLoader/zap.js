@@ -1,7 +1,7 @@
 console.log("tests")
 chrome.tabs.getSelected(null,function(tab) {
     var domain = new URL(tab.url).hostname;
-    // I don't trust this. Neither should you:
+    // Almost certainly unreliable!
     var domainNoDubs = domain.match(/.*?([\w]+\.[\w]+)$/)[1];
     domainNoDubs = "." + domainNoDubs;
     console.log("domainNoDubs: ", domainNoDubs);
